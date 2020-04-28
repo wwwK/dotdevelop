@@ -62,7 +62,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoDeveloperExtensions", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnit", "src\addins\MonoDeveloperExtensions\NUnit\NUnit.csproj", "{376889B5-6504-46A1-9D18-A9E4B4A50F49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoDevelop.DesignerSupport", "src\addins\MonoDevelop.DesignerSupport\MonoDevelop.DesignerSupport.csproj", "{2C24D515-4A2C-445C-8419-C09231913CFA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoDevelop.DesignerSupport.Mac", "src\addins\MonoDevelop.DesignerSupport.Mac\MonoDevelop.DesignerSupport.Mac.csproj", "{2C24D515-4A2C-445C-8419-C09231913CFA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoDevelop.Autotools", "src\addins\MonoDevelop.Autotools\MonoDevelop.Autotools.csproj", "{CFC02FEC-BDF4-40B9-94D6-35E73F76A92E}"
 EndProject
@@ -774,22 +774,6 @@ Global
 		{376889B5-6504-46A1-9D18-A9E4B4A50F49}.ReleaseMac|Any CPU.ActiveCfg = Release|Any CPU
 		{376889B5-6504-46A1-9D18-A9E4B4A50F49}.ReleaseMac|Any CPU.Build.0 = Release|Any CPU
 		{376889B5-6504-46A1-9D18-A9E4B4A50F49}.ReleaseWin32|Any CPU.ActiveCfg = Release|Any CPU
-		{2C24D515-4A2C-445C-8419-C09231913CFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2C24D515-4A2C-445C-8419-C09231913CFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2C24D515-4A2C-445C-8419-C09231913CFA}.DebugGnome|Any CPU.ActiveCfg = Debug|Any CPU
-		{2C24D515-4A2C-445C-8419-C09231913CFA}.DebugGnome|Any CPU.Build.0 = Debug|Any CPU
-		{2C24D515-4A2C-445C-8419-C09231913CFA}.DebugMac|Any CPU.ActiveCfg = DebugMac|Any CPU
-		{2C24D515-4A2C-445C-8419-C09231913CFA}.DebugMac|Any CPU.Build.0 = DebugMac|Any CPU
-		{2C24D515-4A2C-445C-8419-C09231913CFA}.DebugWin32|Any CPU.ActiveCfg = Debug|Any CPU
-		{2C24D515-4A2C-445C-8419-C09231913CFA}.DebugWin32|Any CPU.Build.0 = Debug|Any CPU
-		{2C24D515-4A2C-445C-8419-C09231913CFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2C24D515-4A2C-445C-8419-C09231913CFA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2C24D515-4A2C-445C-8419-C09231913CFA}.ReleaseGnome|Any CPU.ActiveCfg = Release|Any CPU
-		{2C24D515-4A2C-445C-8419-C09231913CFA}.ReleaseGnome|Any CPU.Build.0 = Release|Any CPU
-		{2C24D515-4A2C-445C-8419-C09231913CFA}.ReleaseMac|Any CPU.ActiveCfg = ReleaseMac|Any CPU
-		{2C24D515-4A2C-445C-8419-C09231913CFA}.ReleaseMac|Any CPU.Build.0 = ReleaseMac|Any CPU
-		{2C24D515-4A2C-445C-8419-C09231913CFA}.ReleaseWin32|Any CPU.ActiveCfg = Release|Any CPU
-		{2C24D515-4A2C-445C-8419-C09231913CFA}.ReleaseWin32|Any CPU.Build.0 = Release|Any CPU
 		{CFC02FEC-BDF4-40B9-94D6-35E73F76A92E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CFC02FEC-BDF4-40B9-94D6-35E73F76A92E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFC02FEC-BDF4-40B9-94D6-35E73F76A92E}.DebugGnome|Any CPU.ActiveCfg = Debug|Any CPU
@@ -2649,6 +2633,8 @@ Global
 		{A0B6FE73-D046-4E1C-BA9D-F20683889C5A}.DebugMac|Any CPU.Build.0 = Debug|Any CPU
 		{A0B6FE73-D046-4E1C-BA9D-F20683889C5A}.ReleaseMac|Any CPU.ActiveCfg = Release|Any CPU
 		{A0B6FE73-D046-4E1C-BA9D-F20683889C5A}.ReleaseMac|Any CPU.Build.0 = Release|Any CPU
+		{A0B6FE73-D046-4E1C-BA9D-F20683889C5A}.DebugGnome|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0B6FE73-D046-4E1C-BA9D-F20683889C5A}.DebugGnome|Any CPU.Build.0 = Debug|Any CPU
 		{E8F4F0EB-C2B1-4116-8459-E076E0E0E485}.DebugMac|Any CPU.ActiveCfg = Debug|Any CPU
 		{E8F4F0EB-C2B1-4116-8459-E076E0E0E485}.DebugMac|Any CPU.Build.0 = Debug|Any CPU
 		{E8F4F0EB-C2B1-4116-8459-E076E0E0E485}.ReleaseMac|Any CPU.ActiveCfg = Release|Any CPU

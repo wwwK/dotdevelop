@@ -44,86 +44,6 @@ using Gtk;
 
 namespace MonoDevelop.DesignerSupport
 {
-	class PropertyMacHostWidget : IPropertyGrid
-	{
-		public event EventHandler PropertyGridChanged;
-
-		readonly GtkNSViewHost host;
-
-		MacPropertyGrid view;
-
-		public string Name { get; set; }
-		public bool ShowHelp { get; set; } //not implemented
-		
-		public ShadowType ShadowType { get; set; } //not implemented
-		public Widget Widget => host;
-
-		public bool IsGridEditing => view.IsEditing;
-
-		public bool ShowToolbar {
-			get => view.ToolbarVisible;
-			set => view.ToolbarVisible = value;
-		}
-
-		public bool Sensitive {
-			get => view.Sensitive;
-			set => view.Sensitive = value;
-		}
-
-		public object CurrentObject {
-			get => view.CurrentObject;
-			set {
-				view.SetCurrentObject (value, new object [] { value });
-			}
-		}
-
-		public PropertyMacHostWidget ()
-		{
-			view = new MacPropertyGrid ();
-			host = new GtkNSViewHost (view);
-
-			view.PropertyGridChanged += View_PropertyGridChanged;
-		}
-
-		void View_PropertyGridChanged (object sender, EventArgs e)
-			=> PropertyGridChanged?.Invoke (this, e);
-
-		public void SetCurrentObject (object obj, object [] propertyProviders)
-			=> view.SetCurrentObject (obj, propertyProviders);
-
-		public void BlankPad () => view.BlankPad ();
-		public void Hide () => view.Hidden = true;
-		public void Show () => view.Hidden = false;
-
-		public void OnPadContentShown ()
-		{
-			//not implemented;
-		}
-
-		public void PopulateGrid (bool saveEditSession)
-		{
-			//view.SetCurrentObject (obj, propertyProviders);
-		}
-
-		public void SetToolbarProvider (object toolbarProvider)
-		{
-			//not implemented;
-		}
-
-		public void CommitPendingChanges ()
-		{
-			//not implemented;
-		}
-
-		public void Dispose ()
-		{
-			if (view != null) {
-				view.PropertyGridChanged -= View_PropertyGridChanged;
-				view.Dispose ();
-				view = null;
-			}
-		}
-	}
 
 	public interface IPropertyGrid : IPropertyPad
 	{
@@ -188,7 +108,7 @@ namespace MonoDevelop.DesignerSupport
 #if MAC
 			nativeWidget = new PropertyMacHostWidget ();
 #else
-			nativeWidget = new pg.PropertyGrid ();
+			nativeWidget = (IPropertyGrid) new pg.PropertyGrid ();
 #endif
 			nativeWidget.PropertyGridChanged += NativeWidget_PropertyGridChanged;
 		}
