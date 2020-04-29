@@ -68,7 +68,7 @@ namespace Mono.TextEditor
 		ITextSelection selection;
 
 		private IEditorOperations editorOperations;
-		internal IEditorOperations EditorOperations 
+		internal IEditorOperations EditorOperations
 		{
 			get {
 				if (editorOperations == null) {
@@ -502,7 +502,7 @@ namespace Mono.TextEditor
 
 					if (hasAggregateFocus) {
 						//Got focus so make sure that the view that had focus (which wasn't us since we didn't have focus before) raises its
-						//lost focus event before we raise our got focus event. This will potentially do bad things if someone changes focus 
+						//lost focus event before we raise our got focus event. This will potentially do bad things if someone changes focus
 						//if the lost aggregate focus handler.
 						Debug.Assert (ViewWithAggregateFocus != this);
 						if (ViewWithAggregateFocus != null) {
@@ -535,10 +535,10 @@ namespace Mono.TextEditor
 		public IGuardedOperations GuardedOperations;
 		internal MDSpaceReservationStack _spaceReservationStack;
 
-#if MAC
+
 		// on Mac ITextView has the extra member GetSpaceReservationManager that isn't there on Windows
 		ISpaceReservationManager ITextView.GetSpaceReservationManager (string name) => throw new NotImplementedException();
-#endif
+
 
 		public IMDSpaceReservationManager GetSpaceReservationManager (string name)
 		{
@@ -614,7 +614,7 @@ namespace Mono.TextEditor
 		public bool IsKeyboardFocused => HasFocus;
 
 		public event EventHandler IsKeyboardFocusedChanged;
-		
+
 		public IViewSynchronizationManager SynchronizationManager { get; set; }
 #endif
 	}
