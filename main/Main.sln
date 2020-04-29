@@ -1,4 +1,4 @@
-﻿Microsoft Visual Studio Solution File, Format Version 12.00
+Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
@@ -471,6 +471,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoDevelop.Debugger.Mac", "src\addins\MonoDevelop.Debugger.Mac\MonoDevelop.Debugger.Mac.csproj", "{573D31CF-B22B-4693-820D-BA143266F4D8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoDevelop.DesignerSupport.Mac", "src\addins\MonoDevelop.DesignerSupport.Mac\MonoDevelop.DesignerSupport.Mac.csproj", "{364E4FEE-0F78-4AEC-A170-BB6AC93E8F9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextUICommon", "external\vs-editor-api\src\Editor\Text\Def\TextUICommon\TextUICommon.csproj", "{11239964-1C07-4A3D-B129-E4AFFFE8A840}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -2730,6 +2732,26 @@ Global
 		{573D31CF-B22B-4693-820D-BA143266F4D8}.Debug|x86.Build.0 = Debug|Any CPU
 		{573D31CF-B22B-4693-820D-BA143266F4D8}.Release|x86.ActiveCfg = Release|Any CPU
 		{573D31CF-B22B-4693-820D-BA143266F4D8}.Release|x86.Build.0 = Release|Any CPU
+		{11239964-1C07-4A3D-B129-E4AFFFE8A840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11239964-1C07-4A3D-B129-E4AFFFE8A840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11239964-1C07-4A3D-B129-E4AFFFE8A840}.DebugGnome|Any CPU.ActiveCfg = Debug|Any CPU
+		{11239964-1C07-4A3D-B129-E4AFFFE8A840}.DebugGnome|Any CPU.Build.0 = Debug|Any CPU
+		{11239964-1C07-4A3D-B129-E4AFFFE8A840}.DebugMac|Any CPU.ActiveCfg = Debug|Any CPU
+		{11239964-1C07-4A3D-B129-E4AFFFE8A840}.DebugMac|Any CPU.Build.0 = Debug|Any CPU
+		{11239964-1C07-4A3D-B129-E4AFFFE8A840}.DebugWin32|Any CPU.ActiveCfg = Debug|Any CPU
+		{11239964-1C07-4A3D-B129-E4AFFFE8A840}.DebugWin32|Any CPU.Build.0 = Debug|Any CPU
+		{11239964-1C07-4A3D-B129-E4AFFFE8A840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11239964-1C07-4A3D-B129-E4AFFFE8A840}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11239964-1C07-4A3D-B129-E4AFFFE8A840}.ReleaseGnome|Any CPU.ActiveCfg = Release|Any CPU
+		{11239964-1C07-4A3D-B129-E4AFFFE8A840}.ReleaseGnome|Any CPU.Build.0 = Release|Any CPU
+		{11239964-1C07-4A3D-B129-E4AFFFE8A840}.ReleaseMac|Any CPU.ActiveCfg = Release|Any CPU
+		{11239964-1C07-4A3D-B129-E4AFFFE8A840}.ReleaseMac|Any CPU.Build.0 = Release|Any CPU
+		{11239964-1C07-4A3D-B129-E4AFFFE8A840}.ReleaseWin32|Any CPU.ActiveCfg = Release|Any CPU
+		{11239964-1C07-4A3D-B129-E4AFFFE8A840}.ReleaseWin32|Any CPU.Build.0 = Release|Any CPU
+		{11239964-1C07-4A3D-B129-E4AFFFE8A840}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{11239964-1C07-4A3D-B129-E4AFFFE8A840}.Debug|x86.Build.0 = Debug|Any CPU
+		{11239964-1C07-4A3D-B129-E4AFFFE8A840}.Release|x86.ActiveCfg = Release|Any CPU
+		{11239964-1C07-4A3D-B129-E4AFFFE8A840}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

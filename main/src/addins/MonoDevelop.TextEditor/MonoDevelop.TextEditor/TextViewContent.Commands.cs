@@ -207,7 +207,7 @@ namespace MonoDevelop.TextEditor
 					return commandsSupportedWhenFindPresenterIsFocused.Contains (commandId);
 				}
 			}
-#if !WINDOWS
+#if MAC
 			if (TextView is ICocoaTextView cocoaTextView)
 				return cocoaTextView.IsKeyboardFocused;
 #endif
