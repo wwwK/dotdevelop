@@ -206,7 +206,7 @@ namespace MonoDevelop.Debugger
 
 			return control;
 		}
-
+#if DD_Mac_TODO
 		public MacObjectValueTreeView GetMacControl (ObjectValueTreeViewFlags flags)
 		{
 			if (view != null)
@@ -218,7 +218,7 @@ namespace MonoDevelop.Debugger
 
 			return control;
 		}
-
+#endif
 		public Control GetControl (ObjectValueTreeViewFlags flags)
 		{
 			if (Platform.IsMac)

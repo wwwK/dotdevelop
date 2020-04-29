@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2C24D515-4A2C-445C-8419-C09231913CFA}</ProjectGuid>
+    <ProjectGuid>{364e4fee-0f78-4aec-a170-bb6ac93e8f9a}</ProjectGuid>
     <TargetFrameworkVersion>$(MDFrameworkVersion)</TargetFrameworkVersion>
     <OutputPath>..\..\..\build\AddIns\MonoDevelop.DesignerSupport</OutputPath>
   </PropertyGroup>
