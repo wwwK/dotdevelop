@@ -66,6 +66,10 @@
       <Name>MacPlatform</Name>
       <Private>False</Private>
     </ProjectReference>
+    <ProjectReference Include="..\MonoDevelop.Debugger\MonoDevelop.Debugger.csproj">
+      <Project>{2357aabd-08c7-4808-a495-8ff2d3cdfdb0}</Project>
+      <Name>MonoDevelop.Debugger</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
@@ -139,6 +143,11 @@
   <ItemGroup>
     <Compile Include="MonoDevelop.Debugger.VSTextView\ExceptionCaught\ExceptionCaughtAdornmentManager.cs" />
     <Compile Include="MonoDevelop.Debugger.VSTextView\ExceptionCaught\ExceptionCaughtProvider.cs" />
+    <Compile Include="MonoDevelop.Debugger.VSTextView\Glyphs\BreakpointGlyphFactoryProvider.cs" />
+    <Compile Include="MonoDevelop.Debugger.VSTextView\Glyphs\BreakpointGlyphMouseProcessor.cs" />
+    <Compile Include="MonoDevelop.Debugger.VSTextView\Glyphs\BreakpointGlyphMouseProcessorProvider.cs" />
+    <Compile Include="MonoDevelop.Debugger.VSTextView\Glyphs\CurrentStatementGlyphFactoryProvider.cs" />
+    <Compile Include="MonoDevelop.Debugger.VSTextView\Glyphs\ReturnStatementGlyphFactoryProvider.cs" />
     <Compile Include="MonoDevelop.Debugger\ObjectValue\Mac\MacDebuggerObjectCellViewBase.cs" />
     <Compile Include="MonoDevelop.Debugger\ObjectValue\Mac\MacDebuggerObjectNameView.cs" />
     <Compile Include="MonoDevelop.Debugger\ObjectValue\Mac\MacDebuggerObjectPinView.cs" />

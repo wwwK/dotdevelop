@@ -43,7 +43,7 @@ namespace MonoDevelop.Debugger
 
 		protected ObjectValueTreeViewController controller;
 		protected ObjectValueTreeView tree;
-#if DD_Mac_TODO// this is for the new treeview#
+#if DD_Mac_TODO// this is for the new treeview
 		protected MacObjectValueTreeView _treeview;
 #endif
 		readonly Control control;
@@ -100,8 +100,8 @@ namespace MonoDevelop.Debugger
 					host.ShowAll ();
 
 					control = host;
-				} 
-				else 
+				}
+				else
 #endif
 				{
 					LoggingService.LogInfo ("Using GtkObjectValueTreeView for {0}", allowWatchExpressions ? "Watch Pad" : "Locals Pad");

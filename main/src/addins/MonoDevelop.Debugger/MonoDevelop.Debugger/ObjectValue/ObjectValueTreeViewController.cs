@@ -221,9 +221,10 @@ namespace MonoDevelop.Debugger
 #endif
 		public Control GetControl (ObjectValueTreeViewFlags flags)
 		{
+#if DD_Mac_TODO
 			if (Platform.IsMac)
 				return GetMacControl (flags);
-
+#endif
 			return GetGtkControl (flags);
 		}
 
@@ -791,7 +792,7 @@ namespace MonoDevelop.Debugger
 		#region Evaluation watches
 		/// <summary>
 		/// Registers the ValueChanged event for a node where IsEvaluating is true. If the node is not evaluating, and
-		/// sendImmediatelyIfNotEvaluating is true, then fire OnEvaluatingNodeValueChanged immediately 
+		/// sendImmediatelyIfNotEvaluating is true, then fire OnEvaluatingNodeValueChanged immediately
 		/// </summary>
 		void RegisterForEvaluationCompletion (ObjectValueNode node, bool sendImmediatelyIfNotEvaluating = false)
 		{
