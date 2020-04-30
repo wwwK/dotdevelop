@@ -23,10 +23,15 @@ to hack around, get a compiling copy as follows:
 
 ```
 git clone -b dotdevelop https://github.com/dotdevelop/dotdevelop.git
+
 cd dotdevelop/
+
 ./configure --profile=gnome
+
 make
+
 cd main
+
 msbuild -r -p:Configuration=DebugGnome
 ```
 
