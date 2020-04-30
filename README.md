@@ -6,7 +6,29 @@ Currently this repo **DOES NOT CONTAIN WORKING CODE!**
 
 **DotDevelop** will hopefully a full-featured integrated development environment (IDE) for .dotnet using Gtk#.
 
+**Current Status**
+
+this branch is based on the last commit on 29 Jan 2020 (https://github.com/mono/monodevelop/commit/96b42aa0741af179a8e501f426b6ff5451c27264)
+
+It was refactored to compile / run again on linux. other platforms will follow.
+
+The IDE starts, projects can be opened.
+
+THERE IS NO EDITOR, so it's not usefull.
+
+
 **Contributors**
+
+to hack around, get a compiling copy as follows:
+
+```
+git clone -b dotdevelop https://github.com/dotdevelop/dotdevelop.git
+cd dotdevelop/
+./configure --profile=gnome
+make
+cd main
+msbuild -r -p:Configuration=DebugGnome
+```
 
 have a look here: http://source.monodevelop.com/
 
