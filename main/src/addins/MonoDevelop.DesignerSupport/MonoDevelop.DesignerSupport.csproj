@@ -13,6 +13,8 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseMac|AnyCPU' " />
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' " />
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DebugGnome|AnyCPU' "/>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseGnome|AnyCPU' "/>
   <ItemGroup Condition=" '$(Configuration)' == 'ReleaseMac' OR '$(Configuration)' == 'DebugMac' ">
       <ProjectReference Include="..\..\..\external\Xamarin.PropertyEditing\Xamarin.PropertyEditing\Xamarin.PropertyEditing.csproj">
         <Project>{A0B6FE73-D046-4E1C-BA9D-F20683889C5A}</Project>
@@ -110,9 +112,6 @@
     <Compile Include="MonoDevelop.DesignerSupport.Toolbox\ToolboxExtensions.cs" />
     <Compile Include="MonoDevelop.DesignerSupport.Toolbox\ICustomTooltipToolboxNode.cs" />
     <Compile Include="MonoDevelop.DesignerSupport.Toolbox\IToolboxWidget.cs" />
-    <Compile Include="MonoDevelop.DesignerSupport.Toolbox\NativeViews\SearchTextField.cs" />
-    <Compile Include="MonoDevelop.DesignerSupport.Toolbox\NativeViews\ToggleButton.cs" />
-    <Compile Include="MonoDevelop.DesignerSupport.Toolbox\NativeViews\ClickedButton.cs" />
     <Compile Include="MonoDevelop.DesignerSupport.Toolbox\Styles.cs" />
     <Compile Include="MonoDevelop.DesignerSupport.Toolbox\Toolbox.cs" />
     <Compile Include="MonoDevelop.DesignerSupport\NativePropertyEditor\ComponentModelObjectEditor.cs" />
@@ -183,9 +182,6 @@
     <EmbeddedResource Include="icons\pad-toolbox-16~dark~sel%402x.png" />
     <EmbeddedResource Include="icons\pad-toolbox-16~sel.png" />
     <EmbeddedResource Include="icons\pad-toolbox-16~sel%402x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Mac\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
