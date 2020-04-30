@@ -476,6 +476,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextUICommon", "external\vs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextUICocoa", "external\vs-editor-api\src\Editor\Text\Def\TextUICocoa\TextUICocoa.csproj", "{9DAA25E7-9C9D-4C34-A72A-E402D29BE6F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoDevelop.DesignerSupport", "src\addins\MonoDevelop.DesignerSupport\MonoDevelop.DesignerSupport.csproj", "{2C24D515-4A2C-445C-8419-C09231913CFA}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		src\core\Mono.TextEditor.Shared\Mono.TextEditor.Shared.projitems*{f8f92aa4-a376-4679-a9d4-60e7b7fbf477}*SharedItemsImports = 4
@@ -2773,6 +2775,26 @@ Global
 		{9DAA25E7-9C9D-4C34-A72A-E402D29BE6F6}.Debug|x86.Build.0 = Debug|Any CPU
 		{9DAA25E7-9C9D-4C34-A72A-E402D29BE6F6}.Release|x86.ActiveCfg = Release|Any CPU
 		{9DAA25E7-9C9D-4C34-A72A-E402D29BE6F6}.Release|x86.Build.0 = Release|Any CPU
+		{2C24D515-4A2C-445C-8419-C09231913CFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C24D515-4A2C-445C-8419-C09231913CFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C24D515-4A2C-445C-8419-C09231913CFA}.DebugMac|Any CPU.ActiveCfg = DebugMac|Any CPU
+		{2C24D515-4A2C-445C-8419-C09231913CFA}.DebugMac|Any CPU.Build.0 = DebugMac|Any CPU
+		{2C24D515-4A2C-445C-8419-C09231913CFA}.DebugWin32|Any CPU.ActiveCfg = DebugMac|Any CPU
+		{2C24D515-4A2C-445C-8419-C09231913CFA}.DebugWin32|Any CPU.Build.0 = DebugMac|Any CPU
+		{2C24D515-4A2C-445C-8419-C09231913CFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C24D515-4A2C-445C-8419-C09231913CFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C24D515-4A2C-445C-8419-C09231913CFA}.ReleaseGnome|Any CPU.ActiveCfg = DebugMac|Any CPU
+		{2C24D515-4A2C-445C-8419-C09231913CFA}.ReleaseGnome|Any CPU.Build.0 = DebugMac|Any CPU
+		{2C24D515-4A2C-445C-8419-C09231913CFA}.ReleaseMac|Any CPU.ActiveCfg = ReleaseMac|Any CPU
+		{2C24D515-4A2C-445C-8419-C09231913CFA}.ReleaseMac|Any CPU.Build.0 = ReleaseMac|Any CPU
+		{2C24D515-4A2C-445C-8419-C09231913CFA}.ReleaseWin32|Any CPU.ActiveCfg = DebugMac|Any CPU
+		{2C24D515-4A2C-445C-8419-C09231913CFA}.ReleaseWin32|Any CPU.Build.0 = DebugMac|Any CPU
+		{2C24D515-4A2C-445C-8419-C09231913CFA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2C24D515-4A2C-445C-8419-C09231913CFA}.Debug|x86.Build.0 = Debug|Any CPU
+		{2C24D515-4A2C-445C-8419-C09231913CFA}.Release|x86.ActiveCfg = Release|Any CPU
+		{2C24D515-4A2C-445C-8419-C09231913CFA}.Release|x86.Build.0 = Release|Any CPU
+		{2C24D515-4A2C-445C-8419-C09231913CFA}.DebugGnome|Any CPU.ActiveCfg = DebugGnome|Any CPU
+		{2C24D515-4A2C-445C-8419-C09231913CFA}.DebugGnome|Any CPU.Build.0 = DebugGnome|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2991,6 +3013,7 @@ Global
 		{364E4FEE-0F78-4AEC-A170-BB6AC93E8F9A} = {56499B8C-4935-4D00-9192-4F2033142975}
 		{11239964-1C07-4A3D-B129-E4AFFFE8A840} = {AA56E3AE-8E61-4101-B01A-2646DC1B0D7B}
 		{9DAA25E7-9C9D-4C34-A72A-E402D29BE6F6} = {AA56E3AE-8E61-4101-B01A-2646DC1B0D7B}
+		{2C24D515-4A2C-445C-8419-C09231913CFA} = {56499B8C-4935-4D00-9192-4F2033142975}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {856CF524-E2A7-4DB0-B80F-8F1B080A2E25}

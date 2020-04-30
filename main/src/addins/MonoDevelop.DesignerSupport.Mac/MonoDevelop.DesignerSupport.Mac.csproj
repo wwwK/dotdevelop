@@ -76,6 +76,9 @@
     <Compile Include="gtk-gui\generated.cs" />
     <Compile Include="gtk-gui\MonoDevelop.DesignerSupport.Toolbox.ComponentSelectorDialog.cs" />
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="MonoDevelop.DesignerSupport.Toolbox\NativeViews\ClickedButton.cs" />
+    <Compile Include="MonoDevelop.DesignerSupport.Toolbox\NativeViews\SearchTextField.cs" />
+    <Compile Include="MonoDevelop.DesignerSupport.Toolbox\NativeViews\ToggleButton.cs" />
     <Compile Include="MonoDevelop.DesignerSupport\MacPropertyGrid.cs" />
     <Compile Include="MonoDevelop.DesignerSupport\PropertyMacHostWidget.cs" />
     <Compile Include="MonoDevelop.DesignerSupport.Toolbox\MacToolbox.cs" />
