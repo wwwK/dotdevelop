@@ -22,7 +22,7 @@ THERE IS NO EDITOR, so it's not usefull.
 to hack around, get a compiling copy as follows:
 
 ```
-git clone -b dotdevelop https://github.com/dotdevelop/dotdevelop.git
+git clone -b dotdevelop_8 https://github.com/dotdevelop/dotdevelop.git
 
 cd dotdevelop/
 
