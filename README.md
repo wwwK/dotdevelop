@@ -19,8 +19,8 @@ THERE IS NO EDITOR, so it's not usefull.
 
 **Contributors**
 
-Please, don't checkout branch dotdevelop! 
-Maybe it will deleted and rebased on our first release.
+Please, **don't checkout branch dotdevelop!** 
+Maybe it will be deleted and rebased on our first release.
 
 To hack around on version 8.6, get a compiling copy from branch dotdevelop_8 as follows:
 
