@@ -25,7 +25,7 @@ main/src/core/Mono.TextEditor.Shared/Mono.TextEditor/Document/TextDocument.cs
 
 main/src/addins/MonoDevelop.SourceEditor2/MonoDevelop.SourceEditor.csproj 
 main/src/addins/MonoDevelop.SourceEditor2/MonoDevelop.SourceEditor.addin.xml 
-	remove the Microsoft.VisualStudio. references and project items.
+	remove the Microsoft.VisualStudio... references and project items.
 
 ##############################################################################################
 
