@@ -21,7 +21,11 @@ main/src/core/Mono.TextEditor.Shared/Mono.TextEditor/Actions/MiscActions.cs
 
 main/src/core/Mono.TextEditor.Shared/Mono.TextEditor/Document/TextDocument.cs 
 	remove the Microsoft.VisualStudio... references and revert the ones providing the old editor.
-	TODO add some details...
+	TODO add some details.
+
+main/src/addins/MonoDevelop.SourceEditor2/MonoDevelop.SourceEditor.csproj 
+main/src/addins/MonoDevelop.SourceEditor2/MonoDevelop.SourceEditor.addin.xml 
+	remove the Microsoft.VisualStudio. references and project items.
 
 ##############################################################################################
 
