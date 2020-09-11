@@ -11,7 +11,7 @@
     branch = xs-5.10-v2
 [submodule "main/external/libgit2"]
     path = main/external/libgit2
-    url = git://github.com/mono/libgit2.git
+    url = git://github.com/libgit2/libgit2.git
     branch = 75db289a04
 [submodule "main/external/libgit2sharp"]
     path = main/external/libgit2sharp
