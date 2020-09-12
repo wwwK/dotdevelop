@@ -1,10 +1,11 @@
 include $(top_srcdir)/xbuild.include
 
-if ENABLE_MACPLATFORM
-SUBDIRS = external po theme-icons tests build/MacOSX
-else
+##if ENABLE_MACPLATFORM
+##SUBDIRS = external po theme-icons tests build/MacOSX
+##else
+##SUBDIRS = external po theme-icons tests
+##endif
 SUBDIRS = external po theme-icons tests
-endif
 
 MD_CONFIGURE=$(top_srcdir)/../scripts/configure.sh
 

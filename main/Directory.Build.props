@@ -6,13 +6,24 @@
     <MdAddinsDirectory>$(MSBuildThisFileDirectory)..\..\md-addins\</MdAddinsDirectory>
     <VSEditorCoreDirectory>$(MdAddinsDirectory)external\vs-editor-core\</VSEditorCoreDirectory>
     <ReferencesVSEditor Condition=" '$(OS)' == 'Windows_NT' ">$(RootDirectory)\msbuild\ReferencesVSEditor.Windows.props</ReferencesVSEditor>
+
+<!-- 20200909 there is no selector for Linux/Gtk at all => replace the Mac config.
     <ReferencesVSEditor Condition=" '$(OS)' != 'Windows_NT' ">$(RootDirectory)\msbuild\ReferencesVSEditor.Mac.props</ReferencesVSEditor>
+-->
+    <ReferencesVSEditor Condition=" '$(OS)' != 'Windows_NT' ">$(RootDirectory)\msbuild\ReferencesVSEditor.Gtk.props</ReferencesVSEditor>
+
     <ReferencesGtk>$(RootDirectory)\msbuild\ReferencesGtk.props</ReferencesGtk>
     <NuGetVersionAllocationAnalyzer>1.0.0.9</NuGetVersionAllocationAnalyzer>
     <NuGetVersionCecil>0.10.1</NuGetVersionCecil>
     <NuGetVersionErrorProneNetStructs>0.1.2</NuGetVersionErrorProneNetStructs>
     <NuGetVersionMicrosoftTemplateEngine>1.0.0-beta3-20171117-314</NuGetVersionMicrosoftTemplateEngine>
+
+<!-- 20200908 no longer able to download this version???
     <NuGetVersionMicrosoftTestPlatform>15.5.0-preview-20170919-04</NuGetVersionMicrosoftTestPlatform>
+-->
+
+    <NuGetVersionMicrosoftTestPlatform>15.6.0</NuGetVersionMicrosoftTestPlatform>
+
     <NuGetVersionMonoDevelopAnalyzers>0.1.0.1</NuGetVersionMonoDevelopAnalyzers>
     <NuGetVersionNewtonsoftJson>10.0.3</NuGetVersionNewtonsoftJson>
     <NuGetVersionNUnit2>2.7.0</NuGetVersionNUnit2>

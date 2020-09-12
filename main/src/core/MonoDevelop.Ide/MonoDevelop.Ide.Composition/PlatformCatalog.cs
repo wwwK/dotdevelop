@@ -46,11 +46,11 @@ namespace Microsoft.VisualStudio.Platform
         [Import]
         internal IBufferTagAggregatorFactoryService BufferTagAggregatorFactoryService { get; private set; }
 
-        [Import]
+		[Import]
 		internal IClassifierAggregatorService ClassifierAggregatorService { get; private set; }
 
-		[Import]
-		internal IViewClassifierAggregatorService ViewClassifierAggregatorService { get; private set; }
+	//oe	[Import]
+	//oe	internal IViewClassifierAggregatorService ViewClassifierAggregatorService { get; private set; }
     }
 
     // Fold back into Text.Def.TextData.TextSnapshotToTextReader

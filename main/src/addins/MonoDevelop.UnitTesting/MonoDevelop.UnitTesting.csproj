@@ -166,12 +166,14 @@
       <VsTestConsole Remove="$(DownloadNupkgDirectory)Microsoft.TestPlatform.$(NuGetVersionMicrosoftTestPlatform)\tools\net451\Extensions\**\*.*" />
     </ItemGroup>
     <ItemGroup>
+<!-- these files are not found, should already be copied above???
       <VsTestConsoleExtensions Include="$(DownloadNupkgDirectory)Microsoft.TestPlatform.$(NuGetVersionMicrosoftTestPlatform)\tools\net451\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll">
         <Visible>false</Visible>
       </VsTestConsoleExtensions>
       <VsTestConsoleExtensions Include="$(DownloadNupkgDirectory)Microsoft.TestPlatform.$(NuGetVersionMicrosoftTestPlatform)\tools\net451\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll">
         <Visible>false</Visible>
       </VsTestConsoleExtensions>
+-->
     </ItemGroup>
     <Copy SourceFiles="@(VsTestConsole)" DestinationFolder="$(OutputPath)\VsTestConsole\%(RecursiveDir)" SkipUnchangedFiles="true" />
     <Copy SourceFiles="@(VsTestConsoleExtensions)" DestinationFolder="$(OutputPath)\VsTestConsole\Extensions\" SkipUnchangedFiles="true" />

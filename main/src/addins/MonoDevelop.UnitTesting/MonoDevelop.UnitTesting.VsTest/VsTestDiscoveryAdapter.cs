@@ -29,7 +29,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.TestPlatform.VsTestConsole.TranslationLayer.Payloads;
+//using Microsoft.TestPlatform.VsTestConsole.TranslationLayer.Payloads; oe broken...
 using Microsoft.VisualStudio.TestPlatform.CommunicationUtilities;
 using Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel;
 using Microsoft.VisualStudio.TestPlatform.ObjectModel;
@@ -128,11 +128,11 @@ namespace MonoDevelop.UnitTesting.VsTest
 				return;
 			}
 			SendExtensionList (GetTestAdapters (discoveryJobInProgress.project).Split (';'));
-			var message = new DiscoveryRequestPayload {
+		/*oe	var message = new DiscoveryRequestPayload {
 				Sources = new string [] { testAssemblyFile },
 				RunSettings = GetRunSettings (discoveryJobInProgress.project)
 			};
-			communicationManager.SendMessage (MessageType.StartDiscovery, message);
+			communicationManager.SendMessage (MessageType.StartDiscovery, message);		*/
 		}
 
 		void OnTestCasesFound (Message message)

@@ -194,7 +194,8 @@ namespace MonoDevelop.SourceEditor
                 {
                     var topLeft = ((IMdTextView)_textView).VisualElement.GetScreenCoordinates
                         (new Gdk.Point((int)_textView.ViewportLeft, (int)(caretLine.TextTop - _textView.ViewportTop)));
-                    var screenRect = new System.Windows.Rect
+//oe                var screenRect = new System.Windows.Rect
+                    Rect screenRect = new Rect
                         (topLeft.X,
                          topLeft.Y,
                          _textView.ViewportWidth,

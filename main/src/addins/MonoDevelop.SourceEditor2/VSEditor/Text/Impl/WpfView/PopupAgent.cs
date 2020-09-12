@@ -274,8 +274,10 @@ namespace MonoDevelop.SourceEditor
                     _popup.DisplayAt(location.TopLeft);
 
                     GeometryGroup requestedSpace = new GeometryGroup();
-                    requestedSpace.Children.Add(new RectangleGeometry(FromXwtRect(spanRectInScreenCoordinates)));
-                    requestedSpace.Children.Add(new RectangleGeometry(FromXwtRect(location)));
+//oe                requestedSpace.Children.Add(new RectangleGeometry(FromXwtRect(spanRectInScreenCoordinates)));
+//oe                requestedSpace.Children.Add(new RectangleGeometry(FromXwtRect(location)));
+                    requestedSpace.Children.Add(new RectangleGeometry(spanRectInScreenCoordinates));
+                    requestedSpace.Children.Add(new RectangleGeometry(location));
 
                     return requestedSpace;
                 }
@@ -648,7 +650,8 @@ namespace MonoDevelop.SourceEditor
 
             if ((width > 0.0) && (height > 0.0))
             {
-                Geometry insetLocation = new RectangleGeometry(new System.Windows.Rect(left, top, width, height));
+//oe            Geometry insetLocation = new RectangleGeometry(new System.Windows.Rect(left, top, width, height));
+                Geometry insetLocation = new RectangleGeometry(new Rect(left, top, width, height));
                 return !reserved.Bounds.IntersectsWith(insetLocation.Bounds);//TODO: This was simpliefied
             }
             else

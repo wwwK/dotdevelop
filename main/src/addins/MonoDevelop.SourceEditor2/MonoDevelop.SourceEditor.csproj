@@ -195,6 +195,7 @@
     <Compile Include="VSEditor\TagBasedSyntaxHighlighting.cs" />
     <Compile Include="VSEditor\TextSelection.cs" />
     <Compile Include="VSEditor\TextViewRoleSet.cs" />
+    <Compile Include="VSEditor\FakeWpf\Geometry.cs" />
     <Compile Include="VSEditor\FakeWpf\SimulatingExtensions.cs" />
     <Compile Include="VSEditor\Language\Def\Intellisense\IPopupIntellisensePresenter.cs" />
     <Compile Include="VSEditor\Language\Impl\Helpers.cs" />

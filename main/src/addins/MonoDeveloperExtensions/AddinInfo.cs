@@ -15,4 +15,6 @@ using Mono.Addins.Description;
 [assembly:AddinDependency ("Core", MonoDevelop.BuildInfo.Version)]
 [assembly:AddinDependency ("Ide", MonoDevelop.BuildInfo.Version)]
 
-[assembly:AddinModule ("MonoDeveloperExtensions_nunit.dll")]
+// oe REMOVED -- no such file generated/known...
+//[assembly:AddinModule ("MonoDeveloperExtensions_nunit.dll")]
+
