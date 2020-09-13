@@ -40,3 +40,6 @@
 	path = main/external/Xamarin.PropertyEditing
 	url = https://github.com/xamarin/Xamarin.PropertyEditing
 	branch = master
+[submodule "main/external/vs-editor-api"]
+	path = main/external/vs-editor-api
+	url = https://github.com/thassin/vs-editor-api.git
