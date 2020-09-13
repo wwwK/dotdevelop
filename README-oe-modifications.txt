@@ -16,6 +16,8 @@ main/external/vs-editor-api		<new submodule>
 main/msbuild/ReferencesVSEditor.Gtk.props
 main/msbuild/RoslynVersion.props
 main/src/addins/MonoDevelop.SourceEditor2/VSEditor/FakeWpf/Geometry.cs
+main/src/addins/MonoDevelop.SourceEditor2/VSEditor/TextEditorFactoryService.cs
+main/src/core/MonoDevelop.Ide/MonoDevelop.Ide.Editor/ITextEditorFactoryService.cs
 
 	 modified:
 	^^^^^^^^^^^
@@ -65,22 +67,33 @@ main/src/addins/MonoDevelop.Debugger/MonoDevelop.Debugger.VSTextView/Tags/Return
 main/src/addins/MonoDevelop.Debugger/MonoDevelop.Debugger.VSTextView/Tags/ReturnStatementTag.cs
 main/src/addins/MonoDevelop.Debugger/MonoDevelop.Debugger.VSTextView/Tags/ReturnStatementTagger.cs
 main/src/addins/MonoDevelop.Debugger/MonoDevelop.Debugger.VSTextView/Tags/ReturnStatementTaggerProvider.cs
-main/src/addins/MonoDevelop.SourceEditor2/Mono.TextEditor/Gui/MdTextViewLineCollection.MdTextViewLine.cs
-main/src/addins/MonoDevelop.SourceEditor2/Mono.TextEditor/Gui/MonoTextEditor.ITextView.cs
+main/src/addins/MonoDeveloperExtensions/AddinInfo.cs
 main/src/addins/MonoDevelop.SourceEditor2/MonoDevelop.SourceEditor.Braces/BraceCompletionManager.cs
 main/src/addins/MonoDevelop.SourceEditor2/MonoDevelop.SourceEditor.csproj
+main/src/addins/MonoDevelop.SourceEditor2/Mono.TextEditor/Gui/MdTextViewLineCollection.MdTextViewLine.cs
+main/src/addins/MonoDevelop.SourceEditor2/Mono.TextEditor/Gui/MonoTextEditor.ITextView.cs
 main/src/addins/MonoDevelop.SourceEditor2/VSEditor/IMdTextView.cs
 main/src/addins/MonoDevelop.SourceEditor2/VSEditor/Language/Impl/Intellisense/CurrentLineSpaceReservationAgent.cs
+main/src/addins/MonoDevelop.SourceEditor2/VSEditor/SmartIndentationService.cs
+main/src/addins/MonoDevelop.SourceEditor2/VSEditor/TagBasedSyntaxHighlighting.cs
 main/src/addins/MonoDevelop.SourceEditor2/VSEditor/Text/Impl/WpfView/PopupAgent.cs
 main/src/addins/MonoDevelop.TextEditor/MonoDevelop.TextEditor/EditorCommandHandlers.cs
 main/src/addins/MonoDevelop.TextEditor/MonoDevelop.TextEditor/TextViewContent.Toolbox.cs
+main/src/addins/MonoDevelop.TextEditor/MonoDevelop.TextEditor.Wpf/Undo/UndoHistoryRegistry.cs
+main/src/addins/MonoDevelop.UnitTesting/MonoDevelop.UnitTesting.csproj
 main/src/addins/MonoDevelop.UnitTesting/MonoDevelop.UnitTesting.VsTest/VsTestAdapter.cs
 main/src/addins/MonoDevelop.UnitTesting/MonoDevelop.UnitTesting.VsTest/VsTestDiscoveryAdapter.cs
 main/src/addins/MonoDevelop.UnitTesting/MonoDevelop.UnitTesting.VsTest/VsTestRunAdapter.cs
-main/src/addins/MonoDevelop.UnitTesting/MonoDevelop.UnitTesting.csproj
-main/src/addins/MonoDeveloperExtensions/AddinInfo.cs
 main/src/core/MonoDevelop.Ide/MonoDevelop.Ide.Composition/CompositionManager.cs
 main/src/core/MonoDevelop.Ide/MonoDevelop.Ide.Composition/PlatformCatalog.cs
+main/src/core/MonoDevelop.Ide/MonoDevelop.Ide.csproj
+main/src/core/MonoDevelop.Ide/MonoDevelop.Ide.Editor/TextEditor.cs
+main/tests/UserInterfaceTests/VersionControlTests/Git/GitBase.cs
+main/tests/UserInterfaceTests/VersionControlTests/Git/GitRepositoryConfigurationTests.cs
+main/tests/UserInterfaceTests/VersionControlTests/Git/GitStashManagerTests.cs
+main/tests/UserInterfaceTests/VersionControlTests/Git/GitTests.cs
+main/tests/UserInterfaceTests/VersionControlTests/SvnTests.cs
+main/tests/UserInterfaceTests/VersionControlTests/VCSBase.cs
 
 	 moved/renamed:
 	^^^^^^^^^^^^^^^^
@@ -134,6 +147,7 @@ $ mono ./main/build/bin/MonoDevelop.exe
 
 	 known problems:
 	^^^^^^^^^^^^^^^^^
+*) GIT support has been removed.
 *) the QuickFix menu is not working in editor.
 *) win10 wsl : the process seems to hang and keep running after closing the app.
 

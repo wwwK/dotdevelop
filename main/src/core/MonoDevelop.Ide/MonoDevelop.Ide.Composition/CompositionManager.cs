@@ -232,15 +232,13 @@ Console.WriteLine( "" );
 
 
 
-
-
 			string[] extraLibraries = new [] {
 
 				"MonoDevelop.Ide",	// PlaformCatalog
 
 			// TODO all of these needed???
 
-				"Microsoft.VisualStudio.CoreUtility",
+			/*	"Microsoft.VisualStudio.CoreUtility",			THIS LIST IS INCOMPLETE...
 				"Microsoft.VisualStudio.CoreUtilityImplementation",
 				"Microsoft.VisualStudio.Language.Implementation",
 				"Microsoft.VisualStudio.Logic.Text.Classification.Aggregator.Implementation",
@@ -253,7 +251,55 @@ Console.WriteLine( "" );
 				"Microsoft.VisualStudio.Text.Model.Implementation",
 				"Microsoft.VisualStudio.Text.MultiCaret.Implementation",
 				"Microsoft.VisualStudio.Text.UI.Utilities",
-				"Microsoft.VisualStudio.UI.Text.Commanding.Implementation"
+				"Microsoft.VisualStudio.UI.Text.Commanding.Implementation"	*/
+
+// oe NOTICE these are .dll names, but without the ".dll" extension...
+// oe NOTICE these are .dll names, but without the ".dll" extension...
+// oe NOTICE these are .dll names, but without the ".dll" extension...
+
+	"Microsoft.VisualStudio.Composition",
+	"Microsoft.VisualStudio.Composition.NetFxAttributes",
+	"Microsoft.VisualStudio.CoreUtility",
+	"Microsoft.VisualStudio.CoreUtilityImplementation",
+	"Microsoft.VisualStudio.ImageCatalog",
+	"Microsoft.VisualStudio.Imaging",
+	"Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime",
+	"Microsoft.VisualStudio.Language",
+	"Microsoft.VisualStudio.Language.Implementation",
+	"Microsoft.VisualStudio.Language.Intellisense",
+	"Microsoft.VisualStudio.Language.StandardClassification",
+	"Microsoft.VisualStudio.Language.Utilities",
+	"Microsoft.VisualStudio.Logic.Text.BufferUndoManager.Implementation",
+	"Microsoft.VisualStudio.Logic.Text.Classification.Aggregator.Implementation",
+	"Microsoft.VisualStudio.Logic.Text.Classification.LookUp.Implementation",
+	"Microsoft.VisualStudio.Logic.Text.Find.Implementation",
+	"Microsoft.VisualStudio.Logic.Text.Navigation.Implementation",
+	"Microsoft.VisualStudio.Logic.Text.Tagging.Aggregator.Implementation",
+	"Microsoft.VisualStudio.Text.BraceCompletion.Implementation",
+	"Microsoft.VisualStudio.Text.Data",
+	"Microsoft.VisualStudio.Text.Data.Utilities",
+	"Microsoft.VisualStudio.Text.Differencing.Implementation",
+	"Microsoft.VisualStudio.Text.EditorOptions.Implementation",
+	"Microsoft.VisualStudio.Text.Implementation.StandaloneUndo",
+	"Microsoft.VisualStudio.Text.Internal",
+	"Microsoft.VisualStudio.Text.Logic",
+	"Microsoft.VisualStudio.Text.Logic.Utilities",
+	"Microsoft.VisualStudio.Text.Model.Implementation",
+	"Microsoft.VisualStudio.Text.MultiCaret.Implementation",
+	"Microsoft.VisualStudio.Text.Outlining.Implementation",
+	"Microsoft.VisualStudio.Text.PatternMatching.Implementation",
+	"Microsoft.VisualStudio.Text.UI.Common",
+	"Microsoft.VisualStudio.Text.UI",
+	"Microsoft.VisualStudio.Text.UI.Gtk",
+	"Microsoft.VisualStudio.Text.UI.Gtk.Utilities",
+	"Microsoft.VisualStudio.Text.UI.Utilities",
+	"Microsoft.VisualStudio.Text.UI.Wpf",
+	"Microsoft.VisualStudio.Threading",
+	"Microsoft.VisualStudio.UI.Text.Commanding.Implementation",
+	"Microsoft.VisualStudio.UI.Text.EditorOperations.Implementation",
+	"Microsoft.VisualStudio.UI.Text.EditorPrimitives.Implementation",
+	"Microsoft.VisualStudio.Utilities",
+	"Microsoft.VisualStudio.Validation"
 
 			};
 
@@ -275,8 +321,6 @@ Console.WriteLine( "oeDEBUG :: CompositionManager :: INIT-1 " + asmName );
 					LoggingService.LogError ("Error - can't load extra assembly: " + asmName, ex);
 				}
 			}
-
-
 
 
 
