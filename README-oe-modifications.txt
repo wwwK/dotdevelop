@@ -113,16 +113,7 @@ main/src/addins/VersionControl/MonoDevelop.VersionControl.Git	<directory>
 $ git submodule init 
 $ git submodule update 
 
-$ ./configure 
-
-	The build profile 'default' does not exist. A new profile will be created.
-	Select the packages to include in the build for the profile 'default':
-
-	1. [X] main
-	2. [ ] extras/MonoDevelop.Database
-
-	Enter the number of an add-in to enable/disable,
-	(q) quit, (c) clear all, (s) select all, or ENTER to continue:  <ENTER>
+$ ./configure --profile=gnome 
 
 $ make clean 
 $ make 
