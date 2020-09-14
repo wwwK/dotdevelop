@@ -434,11 +434,21 @@ namespace MonoDevelop.Ide
 			// Make sure the composition manager started initializing
 			Runtime.GetService<CompositionManager> ();
 
+Console.WriteLine( "oeDEBUG :: IdeStartup.OnIdle() cm initialized" );
+
 			// OpenDocuments appears when the app is idle.
 			if (!hideWelcomePage && !WelcomePage.WelcomePageService.HasWindowImplementation) {
+
+				// oe NOTICE need to do this first???
+				// -> YES otherwise the welcome page is not shown.
+
+				IdeApp.Workbench.Show ();
+
 				WelcomePage.WelcomePageService.ShowWelcomePage ();
 				Counters.Initialization.Trace ("Showed welcome page");
-				IdeApp.Workbench.Show ();
+
+			//oe	IdeApp.Workbench.Show ();
+
 			} else if (hideWelcomePage && !startupInfo.OpenedFiles) {
 				IdeApp.Workbench.Show ();
 			}

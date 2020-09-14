@@ -236,23 +236,6 @@ Console.WriteLine( "" );
 
 				"MonoDevelop.Ide",	// PlaformCatalog
 
-			// TODO all of these needed???
-
-			/*	"Microsoft.VisualStudio.CoreUtility",			THIS LIST IS INCOMPLETE...
-				"Microsoft.VisualStudio.CoreUtilityImplementation",
-				"Microsoft.VisualStudio.Language.Implementation",
-				"Microsoft.VisualStudio.Logic.Text.Classification.Aggregator.Implementation",
-				"Microsoft.VisualStudio.Logic.Text.Navigation.Implementation",
-				"Microsoft.VisualStudio.Logic.Text.Tagging.Aggregator.Implementation",
-				"Microsoft.VisualStudio.Text.BraceCompletion.Implementation",
-				"Microsoft.VisualStudio.Text.Data.Utilities",
-				"Microsoft.VisualStudio.Text.Differencing.Implementation",
-				"Microsoft.VisualStudio.Text.EditorOptions.Implementation",
-				"Microsoft.VisualStudio.Text.Model.Implementation",
-				"Microsoft.VisualStudio.Text.MultiCaret.Implementation",
-				"Microsoft.VisualStudio.Text.UI.Utilities",
-				"Microsoft.VisualStudio.UI.Text.Commanding.Implementation"	*/
-
 // oe NOTICE these are .dll names, but without the ".dll" extension...
 // oe NOTICE these are .dll names, but without the ".dll" extension...
 // oe NOTICE these are .dll names, but without the ".dll" extension...

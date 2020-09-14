@@ -84,8 +84,10 @@ main/src/addins/MonoDevelop.UnitTesting/MonoDevelop.UnitTesting.csproj
 main/src/addins/MonoDevelop.UnitTesting/MonoDevelop.UnitTesting.VsTest/VsTestAdapter.cs
 main/src/addins/MonoDevelop.UnitTesting/MonoDevelop.UnitTesting.VsTest/VsTestDiscoveryAdapter.cs
 main/src/addins/MonoDevelop.UnitTesting/MonoDevelop.UnitTesting.VsTest/VsTestRunAdapter.cs
+main/src/core/MonoDevelop.Ide/MonoDevelop.Ide/IdeStartup.cs
 main/src/core/MonoDevelop.Ide/MonoDevelop.Ide.Composition/CompositionManager.cs
 main/src/core/MonoDevelop.Ide/MonoDevelop.Ide.Composition/PlatformCatalog.cs
+main/src/core/MonoDevelop.Ide/MonoDevelop.Ide.WelcomePage/WelcomePageService.cs
 main/src/core/MonoDevelop.Ide/MonoDevelop.Ide.csproj
 main/src/core/MonoDevelop.Ide/MonoDevelop.Ide.Editor/TextEditor.cs
 main/tests/UserInterfaceTests/VersionControlTests/Git/GitBase.cs
@@ -94,6 +96,7 @@ main/tests/UserInterfaceTests/VersionControlTests/Git/GitStashManagerTests.cs
 main/tests/UserInterfaceTests/VersionControlTests/Git/GitTests.cs
 main/tests/UserInterfaceTests/VersionControlTests/SvnTests.cs
 main/tests/UserInterfaceTests/VersionControlTests/VCSBase.cs
+
 
 	 moved/renamed:
 	^^^^^^^^^^^^^^^^

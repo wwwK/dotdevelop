@@ -118,6 +118,7 @@ namespace MonoDevelop.Ide.WelcomePage
 
 		public static void ShowWelcomePage (bool animate = false)
 		{
+Console.WriteLine( "oeDEBUG :: WelcomePageService.ShowWelcomePage() visible=" + ( visible ? "1" : "0" ) );
 			if (!visible) {
 				visible = true;
 				if (welcomePage == null) {
