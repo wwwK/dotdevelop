@@ -122,6 +122,7 @@ main/tests/UserInterfaceTests/VersionControlTests/VCSBase.cs
 main/src/addins/CSharpBinding/CSharpBinding.csproj
 main/src/addins/CSharpBinding/MonoDevelop.CSharp.Highlighting/HighlightUsagesExtension.cs
 main/src/core/MonoDevelop.Ide/MonoDevelop.Ide.csproj
+main/src/core/MonoDevelop.Ide/MonoDevelop.Ide.Gui.Dialogs/CommonAboutDialog.cs
 
 	 moved/renamed:
 	^^^^^^^^^^^^^^^^
